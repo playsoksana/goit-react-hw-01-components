@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './StatsList.module.css'
 
 
 const StatsList = ({followers, views, likes}) => 
 
-<ul className="stats">
-<li>
+<ul className={styles.stats}>
+<li >
   <span className="label">Followers</span>
   <span className="quantity">{followers}</span>
 </li>
