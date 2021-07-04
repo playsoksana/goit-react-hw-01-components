@@ -1,6 +1,6 @@
 import React from 'react';
-import StatsList from './StatsList';
-import Description from './Description';
+import StatsList from '../StatsList/StatsList';
+import Description from '../Description/Description';
 
 const Profile = ({data}) => 
 
