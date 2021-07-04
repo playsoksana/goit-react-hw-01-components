@@ -1,3 +1,5 @@
+@value first-color from "../../styles/vars.module.css";
+
 .stats {
   display: flex;
   padding: 2px;
@@ -19,6 +21,6 @@
 }
 
 .quantity {
-  color: #000;
+  color: first-color;
   font-weight: 900;
 }
