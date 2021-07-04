@@ -1,12 +1,15 @@
 import React from 'react';
+import user from './data/user.json';
+import statisticalData from './data/statistical-data.json';
 import Profile from './components/Profile/Profile';
-import user from './user.json';
 import Layout from './components/Layout/Layout';
+import Statistics from './components/Statistics/Statistics';
 
 
 const App = () => 
 <Layout>
-<Profile data={user}/>   
+<Profile data={user}/>
+ <Statistics data={statisticalData}/>    
 </Layout>;
 
 
