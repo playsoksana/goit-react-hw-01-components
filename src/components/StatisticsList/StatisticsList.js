@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import StatisticsItem from '../StatisticsItem/StatisticsItem';
 
 
@@ -11,9 +10,5 @@ const StatisticsList =({statData}) =>
 </li>
 ))}
 </ul>;
-
-StatisticsList.propTypes = {
-    id: PropTypes.string.isRequired
-}
 
 export default StatisticsList;
