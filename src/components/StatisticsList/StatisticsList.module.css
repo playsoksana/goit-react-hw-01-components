@@ -1,0 +1,15 @@
+@value text-color from '../../styles/vars.module.css';
+
+.list {
+  color: text-color;
+  text-shadow: rgb(54, 53, 49) 1px 0 10px;
+  display: flex;
+}
+
+.item {
+  width: calc(100% / 5);
+  height: 100%;
+  text-align: center;
+  padding: 20px 5px;
+  color: text-color;
+}

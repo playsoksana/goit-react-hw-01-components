@@ -1,6 +1,6 @@
 body {
-  color: $main-text-color;
-  background-color: $header-text-color;
+  color: #000;
+  background-color: rgb(240, 230, 230);
 }
 
 a {
