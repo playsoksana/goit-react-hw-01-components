@@ -1,0 +1,34 @@
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 450px;
+  padding: 20px 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 9px 0px #000000;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.status {
+  display: inline-block;
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: 'grey';
+}
+
+.avatar {
+  margin-right: 15px;
+  border-radius: 8px;
+  background-color: khaki;
+  padding: 10px;
+}
+
+.name {
+  font-size: 30px;
+  font-weight: 500;
+}
