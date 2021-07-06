@@ -1,12 +1,25 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './Friend.module.css';
 
-const color = (value) => value ? "red" : "green";
-//{data.isOnline}
-
 export const Friend = ({data}) =>
-    <li key={data.id} className={styles.item}>
-        <span className={styles.status} style={{backgroundColor: (data.isOnline)? "red" : "green"}}></span>
+    <>
+        <span className={styles.status} style={{ backgroundColor: (data.isOnline) ? "red" : "green" }}></span>
         <img className={styles.avatar} src={data.avatar} alt={data.name} width="88" />
         <p className={styles.name}>{data.name}</p>
-    </li>;
+    </>
+
+// Friend.defaultProps = {
+//     avatar: `https://yt3.ggpht.com/ytc/AKedOLQ4M-MgcjBx7p80AOMfgq9RQMgIyDFFx5pj5zok=s900-c-k-c0x00ffffff-no-rj`
+// }
+
+// Friend.propTypes = {
+//     data: PropTypes.objectOf(PropTypes.shape(
+//         {
+//         status: PropTypes.bool.isRequired,        
+//             name: PropTypes.string.isRequired
+//        // avatar: PropTypes.string,
+//         }
+//     )).isRequired,
+ 
+// }
