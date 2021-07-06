@@ -9,17 +9,18 @@ export const Friend = ({data}) =>
         <p className={styles.name}>{data.name}</p>
     </>
 
-// Friend.defaultProps = {
-//     avatar: `https://yt3.ggpht.com/ytc/AKedOLQ4M-MgcjBx7p80AOMfgq9RQMgIyDFFx5pj5zok=s900-c-k-c0x00ffffff-no-rj`
-// }
+Friend.defaultProps = {
+    avatar: "https://yt3.ggpht.com/ytc/AKedOLQ4M-MgcjBx7p80AOMfgq9RQMgIyDFFx5pj5zok=s900-c-k-c0x00ffffff-no-rj"
+}
 
-// Friend.propTypes = {
-//     data: PropTypes.objectOf(PropTypes.shape(
-//         {
-//         status: PropTypes.bool.isRequired,        
-//             name: PropTypes.string.isRequired
-//        // avatar: PropTypes.string,
-//         }
-//     )).isRequired,
+Friend.propTypes = {
+    data: PropTypes.objectOf(PropTypes.shape(
+        {
+        status: PropTypes.bool.isRequired,        
+            name: PropTypes.string.isRequired
+    
+        }
+    )).isRequired,
  
-// }
+}
+   // avatar: PropTypes.string,
