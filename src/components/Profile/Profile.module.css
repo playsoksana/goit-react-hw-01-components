@@ -1,6 +1,6 @@
 @value first-color from '../../styles/vars.module.css';
 
-.profile {
+.Profile {
   margin: 0 auto;
   width: 300px;
   padding: 50px 20px;

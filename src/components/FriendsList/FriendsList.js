@@ -1,17 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Friend } from '../Friend/Friend';
-import styles from './FriendsList.module.css'
+
 
 export const FriendsList = ({friendsList}) =>
 
     <ul className="friend-list">
-        {friendsList.map(el =>
-            <li key={el.id} className={styles.item}>
-                <Friend data={el}/>
-            </li>
-                
-                
+        {friendsList.map(el =>            
+            <Friend key={el.id} avatar={el.avatar} name={el.name} isOnline={el.isOnline}/>
         )}
     </ul>;
 

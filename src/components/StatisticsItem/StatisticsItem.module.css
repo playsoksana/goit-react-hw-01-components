@@ -1,7 +1,13 @@
-
+.item {
+  width: calc(100% / 5);
+  height: 100%;
+  text-align: center;
+  padding: 20px 5px;
+  color: text-color;
+}
 
 .label {
-    display: block;
-    margin-bottom: 10px;
-    color: text-color;
+  display: block;
+  margin-bottom: 10px;
+  color: text-color;
 }

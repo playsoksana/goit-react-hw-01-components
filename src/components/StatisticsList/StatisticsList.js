@@ -4,16 +4,15 @@ import StatisticsItem from '../StatisticsItem/StatisticsItem';
 import styles from "./StatisticsList.module.css"
 
 
-const getRandomEl = () =>   
-  Math.floor(Math.random() * Math.floor(255));     
+  
   
 
 const StatisticsList =({statData}) => 
-<ul className={styles.list}>
+<ul className={styles.List}>
 {statData.map(({ label, percentage, id}) =>  
-<li  className={styles.item} style={{backgroundColor: "rgb(" + getRandomEl() + "," + getRandomEl() + "," + getRandomEl() + ")" }} key={id}>
-    <StatisticsItem title={label} interest={percentage}/>         
-</li>
+
+    <StatisticsItem key={id} title={label} interest={percentage}/>         
+
 )}
 </ul>;
 
@@ -27,5 +26,7 @@ StatisticsList.propTypes = {
     )).isRequired,
  
 }
+
+
 
 export default StatisticsList;

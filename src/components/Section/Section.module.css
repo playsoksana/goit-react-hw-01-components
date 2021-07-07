@@ -1,6 +1,6 @@
 @value first-color from '../../styles/vars.module.css';
 
-.section {
+.Section {
   display: flex;
   align-items: center;
   justify-content: center;

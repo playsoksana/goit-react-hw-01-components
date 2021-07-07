@@ -1,8 +1,18 @@
-.item:last-child {
+.Item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 450px;
+  padding: 20px 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 9px 0px #000000;
+}
+
+.Item:last-child {
   margin-bottom: 0;
 }
 
-.status {
+.Status {
   display: inline-block;
   margin-right: 15px;
   width: 20px;
@@ -11,14 +21,14 @@
   background-color: 'grey';
 }
 
-.avatar {
+.Avatar {
   margin-right: 15px;
   border-radius: 8px;
   background-color: khaki;
   padding: 10px;
 }
 
-.name {
+.Name {
   font-size: 30px;
   font-weight: 500;
 }

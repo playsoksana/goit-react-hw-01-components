@@ -6,7 +6,7 @@ import styles from './Profile.module.css'
 
 const Profile = ({data}) => 
 
-<div className={styles.profile}>  
+<div className={styles.Profile}>  
 
   <Description 
   userName={data.name}   

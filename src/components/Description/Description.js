@@ -4,16 +4,16 @@ import styles from './Description.module.css';
 
 
 const Description = ({userName, tag, avatar, location}) => 
-<div className={styles.description}>
+<div className={styles.Description}>
     
 <img
   src={avatar}
   alt="Аватар пользователя"
-  className={styles.photo}
+  className={styles.Photo}
 />
-<p className={styles.name}>{userName}</p>
-<p className={styles.tag}>{tag}</p>
-<p className={styles.location}>{location}</p>
+<p className={styles.Name}>{userName}</p>
+<p className={styles.Tag}>{tag}</p>
+<p className={styles.Location}>{location}</p>
 </div>;
 
 

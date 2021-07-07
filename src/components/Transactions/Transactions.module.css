@@ -1,0 +1,30 @@
+.Table {
+  width: 700px;
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  border-collapse: collapse;
+  box-shadow: 0 -3px 3px 3px #555, 3px 0px 3px 3px #777;
+}
+
+.RowHead {
+  font-weight: bold;
+  text-align: center;
+  /* border: none; */
+  padding: 10px 15px;
+  background: rgb(113, 113, 162);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.RowHead:first-child {
+  border-radius: 8px 0 0 0;
+}
+
+.RowHead:last-child {
+  border-radius: 0 8px 0 0;
+}
+
+.RowHead + .RowHead {
+  border-left: 1px solid #fff;
+}

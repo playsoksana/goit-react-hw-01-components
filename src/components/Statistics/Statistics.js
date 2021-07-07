@@ -4,8 +4,8 @@ import StatisticsList from '../StatisticsList/StatisticsList';
 import styles from './Statistics.module.css'
 
 const Statistics =({data}) => 
-<section className={styles.statistics}>
-<div className={styles.title}>
+<section className={styles.Statistics}>
+<div className={styles.Title}>
 <h2>Upload stats</h2>
 </div>
 <StatisticsList statData={data}/>
