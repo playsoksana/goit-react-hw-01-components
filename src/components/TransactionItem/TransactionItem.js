@@ -2,21 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './TransactionItem.module.css';
 
-export const TransactionItem = ({ transaction }) =>
+export const TransactionItem = ({ type, amount, currency }) =>
     <tr className={styles.RowBody}>
-        <td className={styles.CellBody}>{transaction.type}</td>
-        <td className={styles.CellBody}>{transaction.amount}</td>
-        <td className={styles.CellBody}>{transaction.currency}</td>
+        <td className={styles.CellBody}>{type}</td>
+        <td className={styles.CellBody}>{amount}</td>
+        <td className={styles.CellBody}>{currency}</td>
     </tr>;
 
     
-TransactionItem.propTypes = {
-    transaction: PropTypes.objectOf(PropTypes.shape(
-        {
+TransactionItem.propTypes = {  
             type: PropTypes.string.isRequired,
-            amount: PropTypes.number.isRequired,
+            amount: PropTypes.string.isRequired,
             currency: PropTypes.string.isRequired
-
-        }
-    )).isRequired
 }
