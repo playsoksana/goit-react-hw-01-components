@@ -4,23 +4,24 @@ import Description from '../Description/Description';
 import styles from './Profile.module.css'
 
 
-const Profile = ({data}) => 
+const Profile = ({userName, userTag, userAvatar, userLocation, userStatsFollowers, userStatsViews, userStatsLikes}) => 
 
 <div className={styles.Profile}>  
 
-  <Description 
-  userName={data.name}   
-  tag= {data.tag}
-  avatar = {data.avatar}
-  location = {data.location}
+    <Description
+      
+  name={userName}   
+  tag= {userTag}
+  avatar = {userAvatar}
+  location = {userLocation}
   />
 
 
 
 <StatsList 
-followers={data.stats.followers}
-views={data.stats.views}
-likes={data.stats.likes}
+followers={userStatsFollowers}
+views={userStatsViews}
+likes={userStatsLikes}
 />
 </div>;
 

@@ -3,15 +3,15 @@ import PropTypes from 'prop-types';
 import styles from './Description.module.css';
 
 
-const Description = ({userName, tag, avatar, location}) => 
+const Description = ({name, tag, avatar, location}) => 
 <div className={styles.Description}>
-    
+   
 <img
   src={avatar}
   alt="Аватар пользователя"
   className={styles.Photo}
 />
-<p className={styles.Name}>{userName}</p>
+<p className={styles.Name}>{name}</p>
 <p className={styles.Tag}>{tag}</p>
 <p className={styles.Location}>{location}</p>
 </div>;
@@ -23,7 +23,7 @@ Description.defaultProps = {
 
 Description.propTypes = {
     avatar: PropTypes.string,
-    userName: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired
 }

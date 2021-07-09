@@ -6,15 +6,18 @@ import { Friend } from '../Friend/Friend';
 export const FriendsList = ({friendsList}) =>
 
     <ul className="friend-list">
-        {friendsList.map(el =>            
-            <Friend key={el.id} avatar={el.avatar} name={el.name} isOnline={el.isOnline}/>
+      
+        {friendsList.map(({id, avatar, name, isOnline}) =>            
+            <Friend key={id} avatarFriend={avatar} nameFriend={name} isOnlineFriend={isOnline}/>
         )}
     </ul>;
 
 FriendsList.propTypes = {
     friendList: PropTypes.arrayOf(PropTypes.shape({
         id: PropTypes.number.isRequired,
-        el: PropTypes.object.isRequired
+        avatar: PropTypes.string,
+        name: PropTypes.string.isRequired,
+        isOnline: PropTypes.bool
         }))
     }
 
