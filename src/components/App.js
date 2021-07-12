@@ -17,7 +17,15 @@ import { Transactions } from './Transactions/Transactions';
 
 const App = () => 
     <Layout>
-        <Section><Profile userLocation={user.location} userAvatar={user.avatar } userTag={user.tag } userName={user.name} userStatsFollowers={user.stats.followers} userStatsViews={user.stats.views } userStatsLikes={user.stats.likes}/></Section>
+        <Section><Profile
+         userLocation={user.location}
+         userAvatar={user.avatar }
+          userTag={user.tag }
+          userName={user.name}
+          userStats={user.stats}/></Section>
+        <Section><Statistics
+         data={statisticalData}
+         title="Upload stats"/></Section>
         <Section><Statistics data={statisticalData} /></Section>
     <Section><FriendsList friendsList={friends} /></Section>
     <Section><Transactions transactions={transactionsData }/></Section>

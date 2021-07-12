@@ -4,7 +4,7 @@ import Description from '../Description/Description';
 import styles from './Profile.module.css'
 
 
-const Profile = ({userName, userTag, userAvatar, userLocation, userStatsFollowers, userStatsViews, userStatsLikes}) => 
+const Profile = ({userName, userTag, userAvatar, userLocation, userStats}) => 
 
 <div className={styles.Profile}>  
 
@@ -19,9 +19,9 @@ const Profile = ({userName, userTag, userAvatar, userLocation, userStatsFollower
 
 
 <StatsList 
-followers={userStatsFollowers}
-views={userStatsViews}
-likes={userStatsLikes}
+followers={userStats.followers}
+views={userStats.views}
+likes={userStats.likes}
 />
 </div>;
 
